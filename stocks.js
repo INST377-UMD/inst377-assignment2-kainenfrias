@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', function () {
       if (existing) existing.remove();
     }
   
-    // ✅ Top 5 Reddit Stocks from Tradestie
+    // Top 5 Reddit Stocks from Tradestie
     async function fetchTopRedditStocks() {
       try {
         const response = await fetch('https://tradestie.com/api/v1/apps/reddit?date=2022-04-03');
