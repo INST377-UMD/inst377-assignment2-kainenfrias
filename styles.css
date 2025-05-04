@@ -1,0 +1,270 @@
+/* Reset & base styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  main {
+    padding: 2rem;
+    flex: 1;
+  }
+  
+  /* Navigation */
+  nav {
+    background-color: Black;
+    padding: 1rem 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin: 0 1.5rem;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  nav ul li a:hover,
+  nav ul li.active a {
+    background-color: #3a3a5a;
+  }
+  
+  /* Quote Container */
+  .quote-container {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 2rem auto;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  .quote-author {
+    display: block;
+    margin-top: 0.5rem;
+    font-style: italic;
+    color: #555;
+  }
+  
+  /* Button Container */
+  .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  /* Audio Instructions */
+  .audio-instructions {
+    background-color: #e2e6ea;
+    padding: 1.5rem;
+    margin-top: auto;
+    text-align: center;
+    border-top: 2px solid #ccc;
+  }
+  
+  .audio-btn {
+    padding: 10px 20px;
+    margin: 0.5rem;
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .audio-btn:hover {
+    background-color: #16a085;
+  }
+  
+  /* Chart Container */
+  .chart-container {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 2rem auto;
+    max-width: 800px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  }
+  
+  /* Top Stocks Table */
+  .top-stocks {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 2rem auto;
+    max-width: 800px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 0.75rem;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f9fafb;
+  }
+  
+  tr:hover {
+    background-color: #f1f3f5;
+  }
+  
+  .sentiment-icon {
+    margin-right: 0.5rem;
+  }
+  
+  /* Carousel */
+  .dog-carousel {
+    background-color: white;
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    overflow: hidden;
+  }
+  
+  .dog-slide {
+    display: none;
+    max-height: 100%;
+    object-fit: contain;
+  }
+  
+  .dog-slide.active {
+    display: block;
+  }
+  
+  /* Breed Buttons */
+  .breed-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+    margin: 2rem 0;
+  }
+  
+  .breed-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .breed-btn:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Breed Info */
+  .breed-info {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 2rem auto;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  }
+  
+  /* Custom Button 85 - Glowing Neon */
+  .button-85 {
+    padding: 0.6em 2em;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-85:before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing-button-85 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+  }
+  
+  @keyframes glowing-button-85 {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+  .button-85:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #222;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+  
